@@ -1,0 +1,16 @@
+
+@keyframes bg-slideshow {
+    0% { background-image: url('../../assets/pic1.avif'); }
+    33% { background-image: url('../../assets/pic2.avif'); }
+    66% { background-image: url('../../assets/pic3.avif'); }
+    100% { background-image: url('../../assets/pic1.avif'); } /* Loop back */
+  }
+  
+  .bg-image-slideshow {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    animation: bg-slideshow 9s infinite;
+    transition: background-image 3s ease-in-out;
+  }
